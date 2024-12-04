@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebFinances</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>WebFinances</h1>
+    <button id="theme-toggle">Modo Escuro</button>
+  </header>
+
+  <main>
+    <section id="cadastro">
+      <h2>Cadastrar Transação</h2>
+      <form id="form-transacao">
+        <input type="text" id="nome" placeholder="Nome/Descrição" required>
+        <select id="categoria" required>
+          <option value="receita">Receita</option>
+          <option value="despesa">Despesa</option>
+        </select>
+        <input type="date" id="data" required>
+        <input type="number" id="valor" placeholder="Valor" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section id="listagem">
+      <h2>Lista de Transações</h2>
+      <table id="tabela-transacoes">
+        <thead>
+          <tr>
+            <th>Nome/Descrição</th>
+            <th>Categoria</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </section>
+
+    <section id="resumo">
+      <h2>Resumo Financeiro</h2>
+      <div id="resumo-financeiro">
+        <p>Total de Receitas: <span id="total-receitas">R$ 0,00</span></p>
+        <p>Total de Despesas: <span id="total-despesas">R$ 0,00</span></p>
+        <p>Saldo Final: <span id="saldo-final">R$ 0,00</span></p>
+      </div>
+    </section>
+  </main>
+  <script rel="javascript" src="js/script.js"></script>
+
+</body>
+</html>
